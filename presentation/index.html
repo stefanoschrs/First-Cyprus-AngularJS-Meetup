@@ -26,27 +26,177 @@ layout: true
 ---
 
 .left-column[
-## Some Features
+## History
 ]
 .right-column[
-- Perfect for building *Dynamic Web Applications*
-- Runs in the *browser* (Front-End)
-- Your *Back-End* can be anything! (PHP, NodeJS, Ruby..)
-]
+- Developed by **Google**
 
+- Initial release **2009**
+
+- Approximately **8.500** sites
+
+- More than **1500** modules
+
+- More than **100.000** StackOverflow Questions
+
+- **42.980** Stars on Github
+
+- **19.347** Forks on Github
+]
 
 ---
 
+.left-column[
+## History
+## Large Applications
+]
+.right-column[
 Some Large Web Applications Made with AngularJS
 * iTunes Connect & Analytics
+
 * Amazon
+
 * Forbes
+
 * GoDaddy
+
 * Indiegogo
+
 * All the Google Products
+
 * ...
 
 .footnote[[More Made With Angular Examples](https://www.madewithangular.com)]
+]
+
+---
+
+.left-column[
+## History
+## Large Applications
+## REST Communication
+]
+.right-column[
+
+Easy Communication with any type of RESTful Backend Service (NodeJS, PHP, Ruby, JAVA ..)
+
+```javascript
+$http.post('/api/user', {
+		name: 'John'
+})
+.success(function(res){
+		// ..
+})
+.error(function(err){
+		// ..
+});
+```
+]
+---
+
+.left-column[
+## History
+## Large Applications
+## Easy RESTful Communication
+## MVW (Model View Whatever)
+]
+
+.right-column[
+Model
+```javascript
+$scope.name = 'John';
+```
+
+View
+```html
+<input type="text" ng-model='name'>
+
+<h1>Hello <span ng-bind='name'></span></h1>
+
+<button ng-click='bye()'>Bye</button>
+```
+
+Controller
+```javascript
+.controller('MyCtrl', function($scope){
+	$scope.name = 'John';
+	
+	$scope.bye = function(){
+		// ..
+	};
+});
+```
+]
+---
+
+.left-column[
+## Large Applications
+## Easy RESTful Communication
+## MVW (Model View Whatever)
+## Dependency Injection
+]
+.right-column[
+controller.js
+```javascript
+.controller('MyCtrl', ['CoolService', function(CoolService){
+		CoolService.getStuff();
+		// ..
+}]);
+```
+
+controller1.js
+```javascript
+.controller('MyCtrl1', ['CoolService', function(CoolService){
+		CoolService.getStuff();
+		// ..
+}]);
+```
+
+factory.js
+```javascript
+.factory('CoolService', ['$http', function($http){
+	return {
+		getStuff: function(){
+			// ..
+		}
+	}
+}]);
+```
+]
+
+---
+
+.left-column[
+## Easy RESTful Communication
+## MVW (Model View Whatever)
+## Dependency Injection
+## Enchance HTML
+]
+.right-column[
+index.html
+```html
+<cat name='Aby' breed='abyssinian'></cat>
+<cat name='Bob' breed='exotic'></cat>
+```
+
+cat.html
+```html
+<div class="cat">
+	<h2 class='cat__name' ng-bind='name'></h2>
+	<p class='cat__breed' ng-bind='breed'></p>
+</div>
+```
+]
+
+---
+
+layout: true
+class: center, middle, inverse
+
+---
+
+# [Example 1](/example1)
+Two Way Data-Binding
 	</textarea>
 	
 	<!-- Javascripts -->

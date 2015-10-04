@@ -19,4 +19,4 @@ echo -e "${G} Starting server on localhost:8000 ${N}"
 xfce4-terminal --tab -e "bash -c 'python -m SimpleHTTPServer; exec bash'"
 
 echo -e "${G} Starting SASS watch ${N}"
-xfce4-terminal --tab -e "bash -c 'sass --watch presentation:presentation example1:example1 example2:example2 example3:example3 --style expanded --no-cache --sourcemap=none; exec bash'"
+xfce4-terminal --tab -e "bash -c 'sass --watch presentation:presentation example1:example1 example2:example2 example3:example3 bonus1:bonus1 --style expanded --no-cache --sourcemap=none; exec bash'"

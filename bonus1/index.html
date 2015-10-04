@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='RoutingApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>First Cyprus AngularJS Meetup | Example 2</title>
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href ui-sref='home'>Home</a></li>
+					<li><a href ui-sref='about'>About</a></li>
+					<li><a href ui-sref='contact.first'>Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div ui-view></div>
+	
+	<script type="text/javascript" src='../bower_components/angular/angular.js'></script>
+	<script type="text/javascript" src='../bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+	<script type="text/javascript" src='public/javascripts/app.js'></script>
+	<script type="text/javascript" src='public/javascripts/controllers.js'></script>
+</body>
+</html>
