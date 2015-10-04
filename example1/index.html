@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>First Cyprus AngularJS Meetup | Example 1</title>
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+	<style type="text/css">
+		[ng-cloak]{
+			display: none;
+		}
+	</style>
+</head>
+<body>	
+	Can I have your Name? <input type="text" ng-model='name' placeholder='John Smith'>
+
+	<div ng-cloak ng-if='name.length > 1'>
+		<h1>Welcome <span ng-bind='name'></span>!</h1>
+		Do you like AngularJS? <input type="checkbox" ng-model='like'>
+		
+		<div ng-show='like'>
+			<h3>Nice one {{ name | uppercase }}!!</h3>
+		</div>
+	</div>	
+
+	<script type="text/javascript" src='../bower_components/angular/angular.min.js'></script>
+</body>
+</html>

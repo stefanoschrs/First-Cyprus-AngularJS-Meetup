@@ -1,0 +1,40 @@
+[ng-cloak]{
+	display: none;
+}
+
+.page-header{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.container{
+	width: 250px;
+	
+	display: inline-block;
+	
+	padding: 10px;
+}
+
+$male: #89cff0;
+$female: #FFB6C1;
+
+.item{
+	&__image{
+		width: 100%;
+	}
+
+	&__id{
+		color: #666;
+		font-style: italic;
+	}
+
+	&__name{
+		&.female{
+			color: darken($female, 10%);
+		}
+
+		&.male{
+			color: darken($male, 10%);
+		}
+	}
+}

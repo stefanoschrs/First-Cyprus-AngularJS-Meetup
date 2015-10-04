@@ -1,0 +1,22 @@
+{
+  "name": "First-Cyprus-AngularJS-Meetup",
+  "version": "1.0",
+  "homepage": "https://github.com/stefanoschrs/First-Cyprus-AngularJS-Meetup",
+  "authors": [
+    "stefanoschrs <stefanoschrs@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "remark": "~0.12.0",
+    "bootstrap-sass": "~3.3.5"
+  }
+}

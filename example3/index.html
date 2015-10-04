@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='MyThirdApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>First Cyprus AngularJS Meetup | Example 2</title>
+
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body ng-controller="MyController">	
+	<h1 class="page-header">Konstantinou kai Elenis</h1>
+
+	<h2>Unsorted</h2>
+	<person-component person='item' ng-repeat='item in people'></person-component>	
+	<hr>
+
+	<h2>Sorted By Name</h2>
+	<person-component person='item' ng-repeat="item in people | orderBy:'name'"></person-component>	
+	<hr>
+
+	<h2>Sorted By Facebook Id Descenting</h2>
+	<person-component person='item' ng-repeat="item in people | orderBy:'-facebookId'"></person-component>
+	<hr>
+
+	<h2>Sorted By Gender & Add some color!</h2>
+	<person-component person='item' ng-repeat="item in people | orderBy:'gender'"></person-component>
+	<hr>
+
+	<h2>Filter By Gender</h2>
+	<person-component person='item' ng-repeat="item in people | filter:{gender:'female'}"></person-component>
+	<hr>	
+	
+	<script type="text/javascript" src='../bower_components/angular/angular.js'></script>
+	<script type="text/javascript" src='script.js'></script>
+</body>
+</html>

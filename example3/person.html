@@ -1,0 +1,8 @@
+<div class="person-component container">
+	<h3>
+		<span ng-class="{'male': person.gender === 'male', 'female': person.gender === 'female'}" class="person__name" ng-bind='person.name'></span>
+		<br>
+		<small class="person__id" ng-bind='person.facebookId'></small>
+	</h3>
+	<img class="person__image" ng-src="https://graph.facebook.com/{{person.facebookId}}/picture?type=large">
+</div>

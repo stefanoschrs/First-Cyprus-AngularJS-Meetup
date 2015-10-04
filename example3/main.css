@@ -1,0 +1,31 @@
+[ng-cloak] {
+  display: none;
+}
+
+.page-header {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.container {
+  width: 250px;
+  display: inline-block;
+  padding: 10px;
+}
+
+/**
+ * personComponent Directive
+ */
+.person__image {
+  width: 100%;
+}
+.person__id {
+  color: #666;
+  font-style: italic;
+}
+.person__name.female {
+  color: #ff8396;
+}
+.person__name.male {
+  color: #5cbdea;
+}
